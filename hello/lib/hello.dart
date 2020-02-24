@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 final DynamicLibrary nativeAddLib =
   Platform.isAndroid
-    ? DynamicLibrary.open("hello")
+    ? DynamicLibrary.open("libhello.so")
     : DynamicLibrary.process();
 
 final int Function(int x, int y) nativeAdd =
